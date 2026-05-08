@@ -130,9 +130,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TurretDemo.EnemyTarget
   teamId: 1
   maxHealth: 10
-  showDeathMarker: 1
-  deathMarkerLifeTimeSeconds: 0.35
   aimPoint: {fileID: 0}
+  bodyRenderer: {fileID: 4485250695993254734}
+  knockbackDistance: 1.5
 --- !u!114 &8287636602627673769
 MonoBehaviour:
   m_ObjectHideFlags: 0

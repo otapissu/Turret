@@ -72,7 +72,7 @@ namespace TurretDemo
                 return;
             }
 
-            enemyTarget.ApplyDamage(damageAmount);
+            enemyTarget.ApplyDamage(damageAmount, transform.forward);
             Destroy(gameObject);
         }
     }
