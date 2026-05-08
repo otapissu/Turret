@@ -102,6 +102,26 @@ namespace TurretDemo
 
         public bool IsWithinEngagementRange => runtimeIsWithinEngagementRange;
 
+        public float YawSpeedDegreesPerSecond
+        {
+            get => yawSpeedDegreesPerSecond;
+            set => yawSpeedDegreesPerSecond = value;
+        }
+
+        public float PitchSpeedDegreesPerSecond
+        {
+            get => pitchSpeedDegreesPerSecond;
+            set => pitchSpeedDegreesPerSecond = value;
+        }
+
+        public float ProjectileSpeed
+        {
+            get => projectileSpeed;
+            set => projectileSpeed = value;
+        }
+
+        
+
         /// <summary>
         /// 현재 프레임에서 추적할 타겟 Transform을 반환합니다. (파생 클래스에서 결정)
         /// </summary>
@@ -261,5 +281,6 @@ namespace TurretDemo
             OnProjectileFired(spawned);
             lastFireTimeSeconds = Time.time;
         }
+
     }
 }
