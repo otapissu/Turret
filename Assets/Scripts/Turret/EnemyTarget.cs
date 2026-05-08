@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 namespace TurretDemo
 {
     /// <summary>
@@ -24,6 +25,9 @@ namespace TurretDemo
         [SerializeField]
         [Tooltip("비워두면 transform.position을 조준점으로 사용합니다.")]
         private Transform aimPoint;
+
+        [SerializeField]
+        private float _blinkSpeed = 5f;
 
         [Header("Death Sequence")]
         [SerializeField]
@@ -153,5 +157,31 @@ namespace TurretDemo
 
             Destroy(gameObject);
         }
+
+
+        public void ActivateTarget()
+        {
+            gameObject.SetActive(true);
+            StartCoroutine(ActivateTargetRoutine());
+        }
+        
+        IEnumerator ActivateTargetRoutine()
+        {
+            float elapsed = 0f;
+            const float shrinkDuration = 2f;
+
+            Vector3 finalizeScale = transform.localScale;
+            transform.localScale = Vector3.zero;
+
+            while (elapsed < shrinkDuration)
+            {
+                elapsed += Time.deltaTime;
+                transform.localScale = Vector3.Lerp(Vector3.zero, finalizeScale, elapsed / shrinkDuration);
+                yield return null;
+            }
+            
+        }
     }
+
+    
 }

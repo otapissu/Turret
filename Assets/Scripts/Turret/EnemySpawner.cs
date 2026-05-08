@@ -157,7 +157,15 @@ namespace TurretDemo
             }
 
             instance.transform.SetPositionAndRotation(spawnPoint.position, rotation);
-            instance.SetActive(true);
+
+            if (instance.TryGetComponent<EnemyTarget>(out var enemyTarget))
+            {
+                enemyTarget.ActivateTarget();
+            }
+            else
+            {
+                instance.SetActive(true);
+            }
 
             if (instance.TryGetComponent<EnemyLinearMover>(out var mover))
             {
