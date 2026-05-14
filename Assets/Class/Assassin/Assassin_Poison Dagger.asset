@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e86011488eaa1848bc92908ecc221d0, type: 3}
+  m_Name: Assassin_Poison Dagger
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponData
+  weaponName: Poison Dagger
+  description: A dagger coated with a potent toxin. Deals damage over time, slowly
+    weakening enemies after each strike.
+  jobClass: 3
+  attackPower: 20
+  range: 1
+  attackSpeed: 2
+  isMelee: 1
+  usesAmmo: 0
+  ammoConsumptionPerShot: 0
+  maxAmmo: 0
+  reloadTime: 0
+  damageType: 2
+  aoeRadius: 0
+  projectileSpeed: 0
+  projectileLifetime: 0
+  criticalChance: 0.25
+  criticalMultiplier: 2
+  statusEffect: 1
+  statusEffectDuration: 3
+  statusEffectValue: 5
+  isConsumable: 0
+  isSellable: 1

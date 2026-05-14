@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e86011488eaa1848bc92908ecc221d0, type: 3}
+  m_Name: Archer_Dagger
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponData
+  weaponName: Dagger
+  description: A short blade used as a backup weapon. Effective at close range when
+    enemies break through the archer's defensive line.
+  jobClass: 0
+  attackPower: 30
+  range: 3
+  attackSpeed: 0.5
+  isMelee: 0
+  usesAmmo: 1
+  ammoConsumptionPerShot: 1
+  maxAmmo: 5
+  reloadTime: 0.3
+  damageType: 0
+  aoeRadius: 0
+  projectileSpeed: 50
+  projectileLifetime: 2
+  criticalChance: 0.75
+  criticalMultiplier: 1.5
+  statusEffect: 0
+  statusEffectDuration: 0
+  statusEffectValue: 0
+  isConsumable: 1
+  isSellable: 1
