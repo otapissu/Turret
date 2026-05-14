@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e86011488eaa1848bc92908ecc221d0, type: 3}
+  m_Name: Warrior_Battle Axe
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponData
+  weaponName: Battle Axe
+  description: 'A heavy axe designed for brutal, high-impact blows.
+
+    Its strikes
+    have a high chance to inflict critical damage, making it deadly against single
+    targets.'
+  jobClass: 1
+  attackPower: 42
+  range: 1.8
+  attackSpeed: 0.4
+  isMelee: 1
+  usesAmmo: 0
+  ammoConsumptionPerShot: 0
+  maxAmmo: 0
+  reloadTime: 0
+  damageType: 0
+  aoeRadius: 1.3
+  projectileSpeed: 0
+  projectileLifetime: 0
+  criticalChance: 0.25
+  criticalMultiplier: 2
+  statusEffect: 0
+  statusEffectDuration: 0
+  statusEffectValue: 0
+  isConsumable: 1
+  isSellable: 1
